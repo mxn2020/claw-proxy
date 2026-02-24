@@ -1,4 +1,4 @@
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-export default defineConfig({ plugins: [react()], test: { globals: true, environment: 'jsdom', setupFiles: './src/test/setup.ts', css: true } })
+export default defineConfig({ server: { port: 5270 }, plugins: [react()], test: { globals: true, environment: 'jsdom', setupFiles: './src/test/setup.ts', css: true } })
