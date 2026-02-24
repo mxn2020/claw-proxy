@@ -1,0 +1,11 @@
+.tp-page { padding: var(--space-6); max-width: 1200px; margin: 0 auto; padding-top: calc(var(--header-height) + var(--space-6)); }
+.tp-page h1 { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--space-6); }
+.tp-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: var(--space-4); margin-bottom: var(--space-6); }
+.tp-stat { padding: var(--space-4); }
+.tp-stat-label { display: block; font-size: var(--font-size-xs); color: var(--color-text-secondary); margin-bottom: var(--space-1); }
+.tp-stat-value { font-size: var(--font-size-2xl); font-weight: 700; font-family: var(--font-mono); }
+.tp-stat-change { display: flex; align-items: center; gap: 2px; font-size: var(--font-size-xs); font-family: var(--font-mono); margin-top: var(--space-1); }
+.tp-stat-change.up { color: var(--color-success); }
+.tp-stat-change.down { color: var(--color-accent-secondary); }
+.tp-table { overflow-x: auto; }
+@media (max-width: 768px) { .tp-stats { grid-template-columns: repeat(2,1fr); } }

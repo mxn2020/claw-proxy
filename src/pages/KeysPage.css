@@ -1,0 +1,7 @@
+.kp-page { padding: var(--space-6); max-width: 800px; margin: 0 auto; padding-top: calc(var(--header-height) + var(--space-6)); }
+.kp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-6); }
+.kp-header h1 { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-xl); font-weight: 700; }
+.kp-list { display: flex; flex-direction: column; gap: var(--space-3); }
+.kp-card { padding: var(--space-4); }
+.kp-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2); }
+.kp-card-stats { display: flex; gap: var(--space-4); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }

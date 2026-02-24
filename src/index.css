@@ -1,0 +1,65 @@
+/* Claw Proxy — Cyberpunk Neon · Dark-first */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');
+
+:root, [data-theme="dark"] {
+  --color-bg-primary: #0A0A12; --color-bg-secondary: #0F0F1A; --color-bg-tertiary: #16162A;
+  --color-bg-card: #12122A; --color-bg-hover: rgba(200,80,255,0.04); --color-bg-elevated: #16162A;
+  --color-text-primary: #E8E4F0; --color-text-secondary: #9B8FBB; --color-text-tertiary: #5F537A;
+  --color-text-inverse: #0A0A12;
+  --color-accent-primary: #C850FF; --color-accent-secondary: #00E5FF; --color-accent-tertiary: #FF3CAC;
+  --color-accent-soft: rgba(200,80,255,0.08);
+  --color-border: rgba(200,80,255,0.08); --color-border-strong: rgba(200,80,255,0.18);
+  --color-success: #00FF88; --color-warning: #FFD600; --color-error: #FF4444;
+  --gradient-accent: linear-gradient(135deg, #C850FF 0%, #00E5FF 100%);
+  --gradient-hot: linear-gradient(135deg, #FF3CAC 0%, #C850FF 50%, #00E5FF 100%);
+  --glass-bg: rgba(15,15,26,0.9); --glass-border: rgba(200,80,255,0.12);
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.3); --card-shadow-hover: 0 4px 20px rgba(200,80,255,0.12);
+}
+[data-theme="light"] {
+  --color-bg-primary: #F8F6FC; --color-bg-secondary: #F0ECF8; --color-bg-tertiary: #E8E2F4;
+  --color-bg-card: #FFFFFF; --color-bg-hover: rgba(120,40,180,0.04);
+  --color-text-primary: #1A0F2E; --color-text-secondary: #5A4480; --color-text-tertiary: #9B8FBB;
+  --color-text-inverse: #F8F6FC;
+  --color-accent-primary: #8B31D4; --color-accent-secondary: #0099AA; --color-accent-tertiary: #CC2A8C;
+  --color-accent-soft: rgba(139,49,212,0.08);
+  --color-border: rgba(26,15,46,0.08); --color-border-strong: rgba(26,15,46,0.15);
+  --glass-bg: rgba(255,255,255,0.85);
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.04); --card-shadow-hover: 0 4px 12px rgba(139,49,212,0.08);
+}
+:root {
+  --font-family: 'Space Grotesk', sans-serif; --font-mono: 'Fira Code', monospace;
+  --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem;
+  --font-size-lg: 1.125rem; --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 2rem;
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+  --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+  --space-12: 3rem; --space-16: 4rem;
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px; --radius-full: 9999px;
+  --transition-fast: 0.15s ease; --transition-base: 0.25s ease;
+  --header-height: 56px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body { font-family: var(--font-family); background: var(--color-bg-primary); color: var(--color-text-primary); line-height: 1.5; min-height: 100vh; }
+a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; }
+input, textarea, select { font-family: inherit; } ul, ol { list-style: none; }
+.card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--card-shadow); }
+.gradient-text { background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); font-weight: 600; font-size: var(--font-size-sm); border: 1px solid var(--color-border); background: var(--color-bg-card); color: var(--color-text-primary); cursor: pointer; transition: all var(--transition-fast); }
+.btn:hover { border-color: var(--color-border-strong); background: var(--color-bg-hover); }
+.btn-primary { background: var(--gradient-accent); color: white; border: none; }
+.btn-primary:hover { opacity: 0.9; }
+.btn-ghost { background: transparent; border: none; color: var(--color-text-secondary); }
+.btn-ghost:hover { color: var(--color-text-primary); background: var(--color-bg-hover); }
+.btn-sm { padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
+.btn-icon { padding: var(--space-2); width: 34px; height: 34px; }
+.badge { display: inline-flex; align-items: center; gap: var(--space-1); padding: 2px var(--space-2); border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: 600; }
+.badge-neon { background: rgba(200,80,255,0.12); color: var(--color-accent-primary); }
+.badge-cyan { background: rgba(0,229,255,0.12); color: var(--color-accent-secondary); }
+.badge-green { background: rgba(0,255,136,0.12); color: var(--color-success); }
+.badge-red { background: rgba(255,68,68,0.12); color: var(--color-error); }
+.input { width: 100%; padding: var(--space-2) var(--space-3); background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-md); color: var(--color-text-primary); font-size: var(--font-size-sm); font-family: var(--font-mono); }
+.input:focus { outline: none; border-color: var(--color-accent-primary); box-shadow: 0 0 0 2px var(--color-accent-soft); }
+.input::placeholder { color: var(--color-text-tertiary); }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes glow { 0%,100% { box-shadow: 0 0 8px rgba(200,80,255,0.15); } 50% { box-shadow: 0 0 20px rgba(200,80,255,0.3); } }
+.animate-fade-in { animation: fadeIn 0.3s ease-out; }

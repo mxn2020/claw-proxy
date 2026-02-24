@@ -1,0 +1,9 @@
+.an-page { padding: var(--space-6); max-width: 1200px; margin: 0 auto; padding-top: calc(var(--header-height) + var(--space-6)); }
+.an-page h1 { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-xl); font-weight: 700; }
+.an-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--space-4); }
+.an-card { padding: var(--space-5); }
+.an-card h3 { font-size: var(--font-size-base); margin-bottom: var(--space-4); color: var(--color-accent-secondary); }
+.an-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: var(--space-3); }
+.an-val { display: block; font-family: var(--font-mono); font-size: var(--font-size-lg); font-weight: 700; }
+.an-label { font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
+@media (max-width: 768px) { .an-grid { grid-template-columns: 1fr; } }
