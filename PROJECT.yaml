@@ -1,5 +1,6 @@
-id: 68695e98-d59f-427d-a21c-5a463e471331
 name: claw-proxy
+project_scope: main
+project_type: standalone
 description: Claw Proxy
 tier: prototype
 lane: oss
@@ -9,5 +10,6 @@ stack: [typescript, react, convex, vite]
 repo: "https://github.com/mxn2020/claw-proxy"
 deploy_url: null
 last_active: 2026-02-24
-tags: []
-notes: 
+tags: [openclaw, proxy, networking, routing, middleware, gateway, api]
+notes: null
+id: 68695e98-d59f-427d-a21c-5a463e471331
