@@ -1,0 +1,16 @@
+name: claw-proxy
+project_scope: main
+project_type: standalone
+description: API proxy management for CLaw service routing
+tier: prototype
+lane: open-source
+priority: medium
+oss: true
+stack: ["typescript", "react", "vite", "convex"]
+repo: "https://github.com/mxn2020/claw-proxy"
+deploy_url: null
+last_active: 2026-03-11
+tags: ["claw-proxy", "convex", "react", "open-source", "ai-tools"]
+notes: null
+id: null
+category: oss-tool
