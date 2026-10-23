@@ -2,7 +2,7 @@
 > 🛡️ Unified LLM API gateway with routing, caching, and rate limiting.
 
 [![CI](https://github.com/mxn2020/claw-proxy/actions/workflows/ci.yml/badge.svg)](https://github.com/mxn2020/claw-proxy/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
 ## ✨ Features
 - **📡 Live Traffic** — Real-time request viewer with status, latency, tokens
@@ -19,3 +19,7 @@ cd claw-proxy && npm install && npm run dev
 
 ## 📄 License
 MIT © [Mehdi Nabhani](https://github.com/mxn2020)
+
+---
+
+> **License note:** As of 2026-10-23 this project is licensed under the Apache License 2.0 (previously MIT). Versions released before this change remain available under MIT to those who received them.
