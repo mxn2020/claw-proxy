@@ -18,7 +18,7 @@ cd claw-proxy && npm install && npm run dev
 ```
 
 ## 📄 License
-MIT © [Mehdi Nabhani](https://github.com/mxn2020)
+MIT © [AVS Media](https://github.com/mxn2020)
 
 ---
 
